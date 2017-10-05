@@ -40,11 +40,10 @@ Wii U  300     192
 Where datatypes are:
 Txt.   Num.    Num.
 
-If all the datatypes were "TEXT", a query that sorts the items in descending order would result in:
+If all the datatypes were "TEXT", a query that sorts the items in descending order would result in a confusing result of:
 Quantity
 21
 192
 11
 
-To avoid confusion, it's important to accurately define data types. 
-This way, data can be parsed accurately, safely, and efficiently.
+To avoid confusion, it's important to accurately define data types. Additionally, numeric operations can never be done with "TEXT" datatypes. A logical approach towards storing numbers assumes that some kind of operation will be done later. Otherwise, this could not be done. Data can be parsed accurately, safely, and efficiently when named properly.
