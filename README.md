@@ -22,13 +22,15 @@ Shoes      11       3
 
 ## Types of Data
 TEXT
-Typically store names / descriptions
+Typically store names / descriptions. 
+Usually "strings" or the sort
 
 NUMERIC
-Usually store quantities in numbers
+Usually store quantities in numbers, such as "integer"/"float"
 
 DATE 
 Only store anything time-related
+Always stores in chronological order
 
 It's important to accurately define data types in your database. For example, consider a table of:
 Ex.
