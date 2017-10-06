@@ -38,7 +38,10 @@ Always stores in chronological order
 
 ### The 'id' Identifier
 
-'id' is a unique identifier for some database entry. This specifies that each entry is not a duplicate, and can be isolated when needed.
+'id'/some variation of id's are a unique identifier for some database entry. This specifies that each entry is not a duplicate, and can be isolated when needed.
+
+IMPORTANT NOTE: <br>
+Programmers often use the 'id' in other tables, otherwise known as FOREIGN_KEYs. One strong benefit of this results in more efficient and non-duplicated data sets, taking up less memory. Because id's can be used to relate to others, they can be referred to as "Relational Databases."
 
 ---
 
@@ -130,6 +133,9 @@ These operators are:
 Ex.
 SELECT <some_column> FROM <some_table> WHERE <some_title> = <some_datatype>
 SELECT chocolates, cookies FROM snacks WHERE price = 1 #-> returns all chocolates and cookies where price = 1
+
+# id Concepts
+
 
 # Reserved Words/'Commands' in SQL
 
