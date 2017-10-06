@@ -147,14 +147,23 @@ If the number in the left is smaller than the right, return true.
 - LESS THAN or EQUAL TO ---> <=<br>
 If the number in the left is smaller or equal to the right, return true.
 
-
 - GREATER THAN ---> ><br>
 If the number in the left is greater than the right, return true.
  
 - GREATER THAN or EQUAL TO ---> >=<br>
 If the number in the left is greater than or equal to the right, return true.
 
-# id Concepts
+### Using More than One Conditional
+We can use more than one conditional by referring to some data and add the keywords AND or OR.
+SELECT <some_column> FROM <some_table> WHERE <name> <condition 1> AND <name><condition 2>;
+SELECT <some_column> FROM <some_table> WHERE <name><condition 1> OR <name><condition 2>;
+
+Ex.<br>
+SELECT * FROM table WHERE x > 100 and x < 1000>
+
+### Using Conditionals On Dates
+
+
 
 
 # Reserved Words/'Commands' in SQL
@@ -177,4 +186,4 @@ SELECT x AS X FROM table; #-> returns X
 ### WHERE
 
 ### OPERATORS
-
+=, !=, <, <=, >, >=
