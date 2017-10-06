@@ -41,7 +41,8 @@ Always stores in chronological order
 'id'/some variation of id's are a unique identifier for some database entry. This specifies that each entry is not a duplicate, and can be isolated when needed.
 
 IMPORTANT NOTE: <br>
-Programmers often use the 'id' in other tables, otherwise known as FOREIGN_KEYs. One strong benefit of this results in more efficient and non-duplicated data sets, taking up less memory. Because id's can be used to relate to others, they can be referred to as "Relational Databases."
+Programmers often use the 'id' in other tables, otherwise known as FOREIGN_KEYs. One strong benefit of this results in more efficient and non-duplicated data sets, taking up less memory. Because id's can be used to relate to others, they can be referred to as "Relational Databases."<br>
+These relationships are where a lot of the power and complexity that advanced SQL queries come from!
 
 ---
 
@@ -122,17 +123,36 @@ SELECT <some_column(s)> FROM <table> WHERE <some_condition>
 ```
 
 ### Conditionals/Operators
-Conditionals are logic statements that indicate specific rows/data using operators. The same datatype notation must be used when referring to them in conditionals. For example, integers must be searched as integers. Text must be searched as strings.
-These operators are:
-- EQUAL TO ---> =<br>
+Conditionals are logic statements that indicate specific rows/data using operators. The same datatype notation must be used when referring to them in conditionals. For example, integers must be searched as integers. Text must be searched as strings.<br>
 
-- NOT EQUAL TO ---> !=<br>
-
-- NOT EQUAL TO ---> !=<br>
- 
 Ex.
 SELECT <some_column> FROM <some_table> WHERE <some_title> = <some_datatype>
 SELECT chocolates, cookies FROM snacks WHERE price = 1 #-> returns all chocolates and cookies where price = 1
+
+Typically, these consist of:<br>
+```
+...<some_column_name> = #operator <some_value>;
+```
+These operators are:
+- EQUAL TO ---> =<br>
+Compares the equality of two values.
+
+- NOT EQUAL TO ---> !=<br>
+Compares the values. If they don't match, return true.
+
+##### Relational Operators
+- LESS THAN ---> <<br>
+If the number in the left is smaller than the right, return true.
+
+- LESS THAN or EQUAL TO ---> <=<br>
+If the number in the left is smaller or equal to the right, return true.
+
+
+- GREATER THAN ---> ><br>
+If the number in the left is greater than the right, return true.
+ 
+- GREATER THAN or EQUAL TO ---> >=<br>
+If the number in the left is greater than or equal to the right, return true.
 
 # id Concepts
 
@@ -157,3 +177,4 @@ SELECT x AS X FROM table; #-> returns X
 ### WHERE
 
 ### OPERATORS
+
