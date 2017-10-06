@@ -17,11 +17,11 @@ Often or not, data is stored individually.
 Rows are defined individually, and are singular entries on a table/column. Rows can be manipulated and parsed at will, allowing for flexible querying.
 
 ex.
-| Product       | Size  | Quantity  |
+| Product       | Price | Quantity  |
 | ------------- |:-----:|----------:|
-| Shirt         | M     |  1        |
-| Cap           | M     |  2        |
-| Shoes         | 11    |  3        |
+| Shirt         |  M    |  1        |
+| Cap           |  M    |  2        |
+| Shoes         |  11   |  3        |
 
 ## Types of Data
 TEXT
@@ -37,11 +37,6 @@ Always stores in chronological order
 
 It's important to accurately define data types in your database. For example, consider a table of:
 Ex.
-Name | Price | Quantity <br>
-Xbox   350     11<br>
-PS4    400     21<br>
-Wii U  300     192<br>
-
 | Product       | Price | Quantity  |
 | ------------- |:-----:|----------:|
 | Xbox One      | 350   |  11       |
