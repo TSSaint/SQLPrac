@@ -88,7 +88,9 @@ SELECT * FROM table;
 ```
 
 # Specific Querying Methods
-We can retrieve small portions by changing the syntax of the query to choose specific columns. This will return all data in default order.
+We can retrieve small portions by changing the syntax of the query to choose specific columns. This will return all data in default order. 
+
+Note: generating smaller reports/data maximizes the efficiency of the report being run, which helps programs run smoother and faster.
 
 ### Single Column
 ```
@@ -110,8 +112,24 @@ We can change the names of columns in SQL by using the "AS" keyword. This will n
 Ex. <br>
 SELECT <some_column> AS <New_column> FROM <some_table>; #-> returns New_column
 
+# Specific Data w/ Conditions
+We can choose specific groups of items and data by using the WHERE keyword, followed by <some_condition>. For example, we can generate a query to indicate a portion of specific row (or rows) by using conditional operators.
+```
+SELECT <some_column(s)> FROM <table> WHERE <some_condition>
+```
 
+### Conditionals/Operators
+Conditionals are logic statements that indicate specific rows/data using operators. The same datatype notation must be used when referring to them in conditionals. For example, integers must be searched as integers. Text must be searched as strings.
+These operators are:
+- EQUAL TO ---> =<br>
 
+- NOT EQUAL TO ---> !=<br>
+
+- NOT EQUAL TO ---> !=<br>
+ 
+Ex.
+SELECT <some_column> FROM <some_table> WHERE <some_title> = <some_datatype>
+SELECT chocolates, cookies FROM snacks WHERE price = 1 #-> returns all chocolates and cookies where price = 1
 
 # Reserved Words/'Commands' in SQL
 
@@ -129,3 +147,7 @@ SELECT * FROM <table> #-> retusn info from <table>
 Allows the aliasing of column names. Multiple words are not allowed - they must be strung together in quotes "<alias>".
 Ex.<br>
 SELECT x AS X FROM table; #-> returns X
+
+### WHERE
+
+### OPERATORS
