@@ -16,7 +16,8 @@ Often or not, data is stored individually.
 
 Rows are defined individually, and are singular entries on a table/column. Rows can be manipulated and parsed at will, allowing for flexible querying.
 
-ex. <br>
+Ex. <br>
+
 | Product       | Price | Quantity  |
 | ------------- |:-----:|----------:|
 | Shirt         |  M    |  1        |
@@ -37,6 +38,7 @@ Always stores in chronological order
 
 It's important to accurately define data types in your database. For example, consider a table of:
 Ex. <br>
+
 | Product       | Price | Quantity  |
 | ------------- |:-----:|----------:|
 | Xbox One      | 350   |  11       |
